@@ -118,7 +118,7 @@ const TypewriterText = ({
   return (
     <div className={`font-mono ${className}`}>
 
-      <span className="text-2xl md:text-2xl lg:text-3xl font-bold text-blue-800 dark:text-slate-200">
+      <span className="text-black">
 
         {displayText}
 
