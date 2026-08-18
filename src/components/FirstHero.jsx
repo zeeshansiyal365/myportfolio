@@ -24,7 +24,7 @@ const FirstHero = () => {
     {<TypewriterView />}
       
     </div>
-    <a href="/public/zeeshan_sainch_CV.pdf" target='_blank' download="/zeeshan_sainch_CV.pdf" ><button className='bg-orange-400 mt-5 flex gap-x-3 items-center rounded-md sm:px-6 md:px-4 sm:py-3 md:py-3 lg:py-4 lg:px-6 font-semibold cursor-pointer text-white sm:text-2xl p-2 ms-8 '>
+    <a href="/zeeshan_sainch_CV.pdf" target='_blank' download="/zeeshan_sainch_CV.pdf" ><button className='bg-orange-400 mt-5 flex gap-x-3 items-center rounded-md sm:px-6 md:px-4 sm:py-3 md:py-3 lg:py-4 lg:px-6 font-semibold cursor-pointer text-white sm:text-2xl p-2 ms-8 '>
       <IoDownloadOutline />
        Download Resume</button></a>
     
