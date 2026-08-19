@@ -24,7 +24,7 @@ const FirstHero = () => {
     {<TypewriterView />}
       
     </div>
-    <a href="/zeeshan_Sainch_CV.pdf" target='_blank' download="/zeeshan_Sainch_CV.pdf" ><button className='bg-orange-400 mt-5 flex gap-x-3 items-center rounded-md sm:px-6 md:px-4 sm:py-3 md:py-3 lg:py-4 lg:px-6 font-semibold cursor-pointer text-white sm:text-2xl p-2 ms-8 '>
+    <a href="/zeeshan_Sainch_CV.pdf" target='_blank' download="zeeshan_Sainch_CV.pdf" ><button className='bg-orange-400 mt-5 flex gap-x-3 items-center rounded-md sm:px-6 md:px-4 sm:py-3 md:py-3 lg:py-4 lg:px-6 font-semibold cursor-pointer text-white sm:text-2xl p-2 ms-8 '>
       <IoDownloadOutline />
        Download Resume</button></a>
     
@@ -32,7 +32,7 @@ const FirstHero = () => {
     <div className='order-1 md:order-2'>  <Lottie src={animation} autoplay loop/></div>
     </div>
 
-    <div className='flex my-10 flex-col mx-auto items-center gap-2 w-[180px]'>
+    <div className='flex my-10 flex-col mx-auto items-center gap-2 w-45'>
       <p className='text-4xl font-bold' id='Skills'>My Skills</p>
       <div className='h-1 w-full bg-black'></div>
     </div>
@@ -65,7 +65,7 @@ const FirstHero = () => {
 </div>
    ))}</div>
 
-    <div className='flex my-10 flex-col mx-auto items-center gap-2 w-[220px]'>
+    <div className='flex my-10 flex-col mx-auto items-center gap-2 w-55'>
       <p className='text-4xl font-bold' id='Projects'>My Projects</p>
       <div className='h-1 w-full bg-black'></div>
     </div>
