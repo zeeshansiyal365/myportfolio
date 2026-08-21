@@ -29,13 +29,18 @@ function Navbar() {
         {/* Desktop Navigation - lg and above */}
         <div className="hidden items-center gap-2 lg:flex">
           {navItems.map((item) => (
-           <a href={"#"+ item} key={item}>  <button
+           <button 
               key={item}
               className={buttonText === item ? "transition duration-300 cursor-pointer rounded-md px-4 py-2 bg-black text-white" : "transition duration-300   cursor-pointer rounded-md px-4 py-2 hover:bg-gray-200"}
-              onClick={() => setButtonText(item)}
+              onClick={() => {setButtonText(item); 
+              document.getElementById(item).scrollIntoView({
+      behavior: "smooth",
+    });
+}}
             >
               {item}
-            </button></a>
+            </button>
+            //  <a href={"#"+ item} key={item}>  </a>
           ))}
         </div>
       </div>

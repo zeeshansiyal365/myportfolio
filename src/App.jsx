@@ -4,7 +4,9 @@ import "./App.css"
 const App = () => {
   return (
 <>
-<Portfolio />
+<div className='scroll-smooth'>
+  <Portfolio />
+</div>
 </>
   )
 }
