@@ -37,7 +37,7 @@ function Navbar() {
       behavior: "smooth",
     });
 }}
-            >
+>
               {item}
             </button>
             //  <a href={"#"+ item} key={item}>  </a>
@@ -47,17 +47,17 @@ function Navbar() {
 
       {/* Mobile Menu */}
       
-        <div className={isOpen === true ? "absolute z-10 transition duration-1000  w-50 border-t opacity-100 bg-white p-2 shadow-2xl lg:hidden" : "absolute z-10 transition opacity-0 duration-300  w-50 border-t bg-white p-2 shadow-2xl lg:hidden" }>
+        <div className={isOpen === true ? "absolute z-10 transition duration-700  w-50 border-t opacity-100 bg-white p-2 shadow-2xl lg:hidden" : "absolute z-10 transition opacity-0 duration-300  w-50 border-t bg-white p-2 shadow-2xl lg:hidden" }>
           {navItems.map((item) => (
-            <a key={item} href={"#" + item}>
-              <button
-              
-              onClick={() => {setButtonText(item) ; setIsOpen(false)}}
+              <button key={item}
+              onClick={() => { document.getElementById(item).scrollIntoView({
+      behavior: "smooth",
+    });
+                setButtonText(item); setIsOpen(false)}}
               className={buttonText === item ? "w-full transition duration-300 cursor-pointer rounded-md px-4 py-2 bg-black text-white" : "transition duration-300 w-full   cursor-pointer rounded-md px-4 py-2 hover:bg-gray-200"}
             >
               {item}
             </button>
-            </a>
           ))}
         </div>
       
