@@ -41,19 +41,21 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="w-[200px] border-t bg-white p-2 shadow-2xl lg:hidden">
+      
+        <div className={isOpen === true ? "absolute z-10 transition duration-300  w-50 border-t opacity-100 bg-white p-2 shadow-2xl lg:hidden" : "absolute z-10 transition opacity-0 duration-300  w-50 border-t bg-white p-2 shadow-2xl lg:hidden" }>
           {navItems.map((item) => (
-            <button
-              key={item}
-              onClick={() => setButtonText(item)}
+            <a key={item} href={"#" + item}>
+              <button
+              
+              onClick={() => {setButtonText(item) ; setIsOpen(false)}}
               className={buttonText === item ? "w-full transition duration-300 cursor-pointer rounded-md px-4 py-2 bg-black text-white" : "transition duration-300 w-full   cursor-pointer rounded-md px-4 py-2 hover:bg-gray-200"}
             >
               {item}
             </button>
+            </a>
           ))}
         </div>
-      )}
+      
     </nav>
   );
 }
