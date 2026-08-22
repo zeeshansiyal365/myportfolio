@@ -42,7 +42,7 @@ const CompletedProjects = () => {
   return (
 <>
 <div >
-  <div className='grid mx-3 my-5 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
+  <div data-aos="fade-up" className='grid mx-3 my-5 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
 <div>
 <img src={bookProject} className='mt-20' alt="bookProject" />
 </div>
@@ -134,7 +134,7 @@ const CompletedProjects = () => {
 
 </div>
 {/* 2nd */}
-<div className='grid mx-3 my-20 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
+<div data-aos="fade-up" className='grid mx-3 my-20 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
 <div>
 <img src={saylaniProject} className='mt-20' alt="saylaniProject" />
 </div>
@@ -229,7 +229,7 @@ const CompletedProjects = () => {
 </div>
 
 {/* 3rd */}
-<div className='grid mx-3 my-20 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
+<div data-aos="fade-up" className='grid mx-3 my-20 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
 <div className='mt-10'>
 <img src={CoreBiz} className='mt-20' alt="CoreBiz" />
 </div>
@@ -344,7 +344,7 @@ const CompletedProjects = () => {
       <p className='text-4xl font-bold'>About Me</p>
       <div className='h-1 w-full bg-black'></div>
     </div>
-    <div className="max-w-3xl mx-auto text-start px-6 py-10">
+    <div data-aos="fade-right" className="max-w-3xl mx-auto text-start px-6 py-10">
   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
     I am, Zeeshan Sainch
   </h2>
@@ -368,7 +368,7 @@ const CompletedProjects = () => {
       <div className='h-1 w-full bg-black'></div>
     </div>
 
-<div className='grid grid-cols-1 md:grid-cols-2'>
+<div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-2'>
   <div>
     <div className="ms-10">
 

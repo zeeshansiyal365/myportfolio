@@ -37,7 +37,7 @@ const FirstHero = () => {
       <div className='h-1 w-full bg-black'></div>
     </div>
     
-    <div className='flex mx-3 justify-center gap-5 flex-wrap my-15'> {skillLevel.map(skill =>(
+    <div  data-aos="fade-up" className='flex mx-3 justify-center gap-5 flex-wrap my-15'> {skillLevel.map(skill =>(
      <div key={skill.name} className="relative w-32.5 h-32.5">
   <svg
     className="w-full h-full -rotate-90"
