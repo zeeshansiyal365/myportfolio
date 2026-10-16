@@ -1,5 +1,6 @@
 import React from 'react'
 import bookProject from "../assets/bookProject.png"
+import AuthImg from "../assets/auth.png"
 import { RiGlobalLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import saylaniProject from "../assets/saylani-welfare-trust.png"
@@ -42,6 +43,114 @@ const CompletedProjects = () => {
   return (
 <>
 <div >
+  <div data-aos="fade-up" className='grid mx-3 my-5 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
+<div>
+<img src={AuthImg} className='mt-10 ' alt="bookProject" />
+</div>
+
+<div>
+  <div className="max-w-4xl mx-auto p-6">
+    {/* Project Title */}
+    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      Authentication System
+    </h2>
+
+    {/* 2-Line Summary */}
+    <p className="text-gray-600 leading-relaxed mb-6">
+      A full-stack authentication system built with React.js, Node.js,
+      Express.js, and MongoDB, featuring user signup, login, email OTP
+      verification, and password reset functionality. It uses JWT
+      authentication, HTTP-only cookies, and bcrypt password hashing
+      for secure user authentication.
+    </p>
+
+    {/* Features */}
+    <h3 className="text-xl font-semibold text-gray-900 mb-4">
+      Features
+    </h3>
+
+    <div className="space-y-3">
+      <p>
+        <strong>User Signup & Login:</strong> Allows users to create an
+        account and securely log in.
+      </p>
+
+      <p>
+        <strong>Email OTP Verification:</strong> Verifies user email
+        addresses using one-time passwords.
+      </p>
+
+      <p>
+        <strong>Forgot & Reset Password:</strong> Allows users to reset
+        forgotten passwords through OTP verification.
+      </p>
+
+      <p>
+        <strong>JWT Authentication:</strong> Uses JSON Web Tokens to
+        authenticate users.
+      </p>
+
+      <p>
+        <strong>HTTP-Only Cookies:</strong> Uses HTTP-only cookies for
+        authentication token handling.
+      </p>
+
+      <p>
+        <strong>Password Hashing:</strong> Uses bcrypt to hash passwords
+        before storing them in the database.
+      </p>
+
+      <p>
+        <strong>REST API Integration:</strong> Connects the React frontend
+        with the Express.js backend through API requests.
+      </p>
+
+      <p>
+        <strong>MongoDB Database:</strong> Stores user information using
+        MongoDB and Mongoose.
+      </p>
+
+      <p>
+        <strong>React.js:</strong> Built using reusable React components
+        and hooks.
+      </p>
+
+      <p>
+        <strong>Node.js & Express.js:</strong> Handles backend logic,
+        authentication, and API endpoints.
+      </p>
+
+      {/* Links */}
+      <div className="flex gap-6 pt-4">
+        <a
+          href="https://authentication-1-pzt1.onrender.com"
+          className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <RiGlobalLine className="text-xl" />
+          Live Link
+        </a>
+
+        <a
+          href="https://github.com/zeeshansiyal365/Authentication"
+          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-xl" />
+          Code Link
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+{/* --------- */}
   <div data-aos="fade-up" className='grid mx-3 my-5 shadow-2xl rounded-2xl  grid-cols-1 shadow-4xl md:grid-cols-2'>
 <div>
 <img src={bookProject} className='mt-20' alt="bookProject" />
